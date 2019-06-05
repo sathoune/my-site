@@ -1,9 +1,10 @@
 .hbox, .vbox { display: flex; }
 .hbox { flex-direction: row; }
 .vbox { flex-direction: column; }
-.vcenter { 
-    align-items: center; 
-    justify-content: center; }
+.center { 
+    justify-content: center;
+    align-items: center;
+}
 .bordered {
     width: 90%;
     height: 90%;
@@ -13,9 +14,12 @@ html, body, #root {
     /* color: #000066; */
     margin: 0;
     height: 100%;
+    justify-content: center;
+
 }
 .main {
-    /* background-color: #006600; */
+    align-items: center; 
+    justify-content: space-between;
 }
 .maxwidth { width: 100%};
 .maxheight { height: 100%};

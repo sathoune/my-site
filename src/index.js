@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Components/App';
 import * as serviceWorker from './serviceWorker';
 const root = document.getElementById('root');
-root.className = "vbox vcenter";
+root.className = "vbox center";
 ReactDOM.render(<App />, root);
 
 // If you want your app to work offline and load faster, you can change

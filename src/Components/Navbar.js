@@ -1,9 +1,15 @@
 import React from "react";
+import NavbarButton from "./NavbarButton";
 
 const Navbar = () => {
-    return(
-        <div>helo</div>
+    return (
+        <div className={"hbox align-start red-background fill"}>
+            <NavbarButton text="helo"/>
+            <NavbarButton text="more helo"/>
+            <NavbarButton text="even more helo"/>
+            <NavbarButton text="lovelyt"/>
+            </div>
     );
-}
+};
 
 export default Navbar;

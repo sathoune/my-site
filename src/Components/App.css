@@ -1,9 +1,21 @@
-.hbox, .vbox { display: flex; }
+.hbox, .vbox { 
+    display: flex; }
 .hbox { flex-direction: row; }
 .vbox { flex-direction: column; }
 .center { 
     justify-content: center;
     align-items: center;
+}
+
+.fill {
+    width: 100%;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.red-background {
+    background-color: #660000;
 }
 .bordered {
     width: 90%;

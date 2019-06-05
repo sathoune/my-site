@@ -1,0 +1,45 @@
+.button-container:hover > .navbar-button {
+    background-color: #660000;
+    color: #006600;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.button-container:hover > .navbar-button-after {
+    background-color: #660000;
+    color: #660000;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.navbar-button {
+    background-color: #006600;
+    color: #000066;
+    border: none;
+    min-height: 3em;
+    min-width: 6em;
+    text-align: center;
+    outline: none;
+    font-family: inherit;
+    padding: 0 0 0 1em;
+    margin: 0.2em 0 0.2em 0.2em;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}
+
+.navbar-button-after {
+    border: none;
+    outline: none;
+    background-color: #006600;
+    min-height: 3em;
+    text-align: center;
+    padding: 0 0 0 1em;
+   
+    color: #006600;
+    min-width: 2em;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: 0.2em 0 0.2em 0;
+    transition: color 0.4s;
+    transition: background-color 0.4s;
+}

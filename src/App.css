@@ -1,5 +1,21 @@
 .hbox, .vbox { display: flex; }
 .hbox { flex-direction: row; }
 .vbox { flex-direction: column; }
-.vcenter { align-items: center; }
-.hcenter { justify-content: center; }
+.vcenter { 
+    align-items: center; 
+    justify-content: center; }
+.bordered {
+    width: 90%;
+    height: 90%;
+    border: 3px solid #660000;
+}
+html, body, #root {
+    /* color: #000066; */
+    margin: 0;
+    height: 100%;
+}
+.main {
+    /* background-color: #006600; */
+}
+.maxwidth { width: 100%};
+.maxheight { height: 100%};

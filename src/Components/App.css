@@ -7,10 +7,6 @@
     align-items: center;
 }
 
-.fill {
-    width: 100%;
-}
-
 .align-start{
     align-items: flex-start;
 }
@@ -18,20 +14,22 @@
     background-color: #660000;
 }
 .bordered {
-    width: 90%;
-    height: 90%;
     border: 3px solid #660000;
 }
 html, body, #root {
-    /* color: #000066; */
     margin: 0;
     height: 100%;
     justify-content: center;
-
 }
+
 .main {
     align-items: center; 
     justify-content: space-between;
 }
-.maxwidth { width: 100%};
-.maxheight { height: 100%};
+
+.hfill { width: 100%;}
+.vfill { height: 100%;}
+
+footer {
+    color: yellow;
+}

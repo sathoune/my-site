@@ -3,11 +3,14 @@ import "./NavbarButton.css";
 
 const NavbarButton = (props) => {
     return (
-        <div className="hbox button-container">
-        <button className={"navbar-button"}>
+        <div className="hbox btn-container">
+        <button 
+            className={"navbar-btn navbar-btn-main"}>
             {props.text}
         </button>
-        <button className={"navbar-button-after"}></button>
+        <button 
+            className={"navbar-btn navbar-btn-after"}>
+        </button>
         </div>
     );
 };

@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 import Main from "./Main";
 import Footer from "./Footer";
 
-function App() {
+const App: JSX.Element = () => {
   return (
-    <div className={"vbox bordered main"}>
+    <div className={"vbox main vfill hfill"}>
       <Navbar />
       <Main />
       <Footer />            

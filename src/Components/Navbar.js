@@ -3,7 +3,7 @@ import NavbarButton from "./NavbarButton";
 
 const Navbar = () => {
     return (
-        <div className={"hbox align-start red-background fill"}>
+        <div className={"hbox align-start red-background hfill"}>
             <NavbarButton text="helo"/>
             <NavbarButton text="more helo"/>
             <NavbarButton text="even more helo"/>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
 
-const Footer = () => {
+const Footer: React.FunctionComponent = () => {
     return (
-        <footer className="red-background hfill">bye</footer>
+        <footer className="">bye</footer>
     );
 }
 

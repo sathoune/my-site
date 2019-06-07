@@ -20,7 +20,9 @@ Proactively envisioned multimedia based expertise and cross-media growth strateg
 
 Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.`;
 
-const Main = () => {
-    return <div>${text}</div>;
+const Main: React.FunctionComponent = () => {
+    return (<main>
+        <p>${text}</p>
+    </main>);
 }
 export default Main;

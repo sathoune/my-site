@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 const App: React.FunctionComponent = () => {
   return (
-    <div className={"vbox main vfill hfill"}>
+    <div className={"vbox center vfill hfill"}>
       <Navbar />
       <Main />
       <Footer />            

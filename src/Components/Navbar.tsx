@@ -1,14 +1,28 @@
 import React from "react";
 import NavbarButton from "./NavbarButton";
 
-const Navbar = () => {
+const placeholder = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {console.log("hi")};
+
+const Navbar: React.FunctionComponent = () => {
     return (
-        <div className={"hbox align-start red-background hfill"}>
-            <NavbarButton text="helo"/>
-            <NavbarButton text="more helo"/>
-            <NavbarButton text="even more helo"/>
-            <NavbarButton text="lovelyt"/>
-            </div>
+        <nav className={"hbox align-start"}>
+            <NavbarButton 
+                text="helo" 
+                exec={placeholder}
+            />
+            <NavbarButton 
+                text="more helo" 
+                exec={placeholder}
+            />
+            <NavbarButton 
+                text="even more helo" 
+                exec={placeholder}
+            />
+            <NavbarButton 
+                text="lovelyt"
+                exec={placeholder}
+            />
+        </nav>
     );
 };
 

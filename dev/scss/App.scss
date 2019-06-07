@@ -19,28 +19,19 @@ code {
 .hbox { flex-direction: row; }
 .vbox { flex-direction: column; }
 .center { 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .align-start{
     align-items: flex-start;
 }
-.red-background {
-    background-color: #660000;
-}
-.bordered {
-    border: 3px solid #660000;
-}
+
+
 html, body, #root {
     margin: 0;
     height: 100%;
     justify-content: center;
-}
-
-.main {
-    align-items: center; 
-    justify-content: space-between;
 }
 
 .hfill { width: 100%;}
@@ -48,4 +39,19 @@ html, body, #root {
 
 footer {
     color: yellow;
+}
+
+nav, footer {
+    background-color: $color-complement-4;
+    width: 100%;
+}
+
+nav {
+    height: 10%;
+    min-height: 3em;
+}
+
+p {
+    margin: 5% 10%;
+    text-align: justify;
 }

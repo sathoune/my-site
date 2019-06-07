@@ -22,7 +22,7 @@ code {
 }
 
 .center {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,23 +30,10 @@ code {
   align-items: flex-start;
 }
 
-.red-background {
-  background-color: #660000;
-}
-
-.bordered {
-  border: 3px solid #660000;
-}
-
 html, body, #root {
   margin: 0;
   height: 100%;
   justify-content: center;
-}
-
-.main {
-  align-items: center;
-  justify-content: space-between;
 }
 
 .hfill {
@@ -59,6 +46,21 @@ html, body, #root {
 
 footer {
   color: yellow;
+}
+
+nav, footer {
+  background-color: #380011;
+  width: 100%;
+}
+
+nav {
+  height: 10%;
+  min-height: 3em;
+}
+
+p {
+  margin: 5% 10%;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=App.css.map */

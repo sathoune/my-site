@@ -1,19 +1,31 @@
 .navbar-btn {
   background-color: #418607;
   color: #87072E;
-  border: 2px solid #D20140;
+  border: none;
   text-align: center;
   font-family: inherit;
   outline: none;
-  margin: 0.5% 0.5%;
-  width: 10%;
-  min-width: 8em;
-  height: 80%;
+  padding: 0;
+  margin: 0 0.5%;
+  height: 100%;
+  width: 90px;
   transition: color 0.4s;
   transition: background-color 0.4s;
+  transition: font-size 1s;
+  transition: width 0.4s;
   align-self: center;
 }
 
+@media screen and (min-width: 700px) {
+  .navbar-btn {
+    width: 120px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navbar-btn {
+    width: 160px;
+  }
+}
 .navbar-btn:first-of-type {
   margin-left: 2%;
 }
@@ -21,15 +33,17 @@
 .navbar-btn:hover {
   background-color: #5FD101;
   color: #D20140;
+  font-weight: bold;
+  font-size: 1em;
   transition: color 0.4s;
   transition: background-color 0.4s;
+  transition: font-size 1s;
 }
 
 .navbar-btn:active {
   background-color: #A60A39;
-  border: none;
   transition: background-color 0.2s;
-  transition: border 0.05s;
+  transition: font-size 1s;
 }
 
 /*# sourceMappingURL=NavbarButton.css.map */

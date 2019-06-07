@@ -15,13 +15,22 @@ const Navbar: React.FunctionComponent = () => {
                 exec={placeholder}
             />
             <NavbarButton 
-                text="even more helo" 
+                text="evenmorehelo" 
                 exec={placeholder}
             />
             <NavbarButton 
                 text="lovelyt"
                 exec={placeholder}
             />
+
+            <a id="linkedin" href="https://www.linkedin.com/in/michal-bargiel/">
+                <img src="/linkedin-blue.png" alt="LinkedIn logo"></img>
+            </a>
+
+            <a id="github" href="https://github.com/captainCapitalism">
+                <img id="github-logo" src="/github-dark.png" alt="Github Logo"></img>
+            </a>
+        
         </nav>
     );
 };

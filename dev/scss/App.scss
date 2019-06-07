@@ -1,4 +1,6 @@
 @import 'colors';
+$standard-transition: 0.4s;
+$long-transition: 1s;
 
 body {
     margin: 0;
@@ -47,11 +49,28 @@ nav, footer {
 }
 
 nav {
-    height: 10%;
+    height: 5%;
     min-height: 3em;
 }
 
 p {
     margin: 5% 10%;
     text-align: justify;
+}
+
+a:hover {
+
+    width: 32px;
+    height: 32px;
+    display: block;
+    box-sizing: border-box;
+    img {
+        display: none;
+    }
+}
+#github:hover {
+    background: url("/github-light.png") no-repeat;
+}
+#linkedin:hover {
+    background: url("/linkedin-white.png") no-repeat;
 }

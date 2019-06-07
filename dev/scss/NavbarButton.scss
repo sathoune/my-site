@@ -1,38 +1,59 @@
 @import 'colors';
 
+$standard-transition: 0.4s;
+$long-transition: 1s;
+
 .navbar-btn {
     background-color: $color-primary-0;
     color: $color-complement-0;
-    border: 2px solid $color-complement-1;
+    border: none;
 
     text-align: center;
     font-family: inherit;
     outline: none;
 
-    margin: 0.5% 0.5%;
-    width: 10%;
-    min-width: 8em;
-    height: 80%;
+    padding: 0;
+    margin: 0 0.5%;
+    height: 100%;
+    width: 90px;
 
-    transition: color 0.4s;
-    transition: background-color 0.4s;
+
+    transition: color $standard-transition;
+    transition: background-color $standard-transition;
+    transition: font-size $long-transition;
+    transition: width $standard-transition;
     align-self: center;
+
 }
 
-.navbar-btn:first-of-type {
-    margin-left: 2%;
+@media screen and (min-width: 700px) {
+    .navbar-btn {
+        width: 120px;
+    }
 }
+
+@media screen and (min-width: 900px) {
+    .navbar-btn {
+        width: 160px;
+    }
+}
+
+.navbar-btn:first-of-type{margin-left: 2%;}
 
 .navbar-btn:hover {
     background-color: $color-primary-1;
     color: $color-complement-1;
-    transition: color 0.4s;
-    transition: background-color 0.4s;
+    font-weight: bold;
+    font-size: 1em;
+
+    transition: color $standard-transition;
+    transition: background-color $standard-transition;
+    transition: font-size $long-transition;
 }
 
 .navbar-btn:active {
     background-color: $color-complement-2;
-    border: none;
-    transition: background-color 0.2s;
-    transition: border 0.05s;
+
+    transition: background-color $standard-transition/2;
+    transition: font-size $long-transition;
 }

@@ -63,22 +63,31 @@ p {
   text-align: justify;
 }
 
-a:hover {
-  width: 32px;
-  height: 32px;
-  display: block;
-  box-sizing: border-box;
-}
-a:hover img {
-  display: none;
-}
-
 #github:hover {
   background: url("/github-light.png") no-repeat;
 }
 
 #linkedin:hover {
   background: url("/linkedin-white.png") no-repeat;
+}
+
+.navbar-anchor:first-of-type {
+  margin-left: auto;
+}
+
+.navbar-anchor {
+  align-self: center;
+  margin-right: 0.5em;
+}
+
+.navbar-anchor:hover {
+  width: 32px;
+  height: 32px;
+  display: block;
+  box-sizing: border-box;
+}
+.navbar-anchor:hover img {
+  display: none;
 }
 
 /*# sourceMappingURL=App.css.map */

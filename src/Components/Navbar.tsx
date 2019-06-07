@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarButton from "./NavbarButton";
+import AnimatedAnchor from "./AnimatedAnchor";
 
 const placeholder = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {console.log("hi")};
 
@@ -23,13 +24,22 @@ const Navbar: React.FunctionComponent = () => {
                 exec={placeholder}
             />
 
-            <a id="linkedin" href="https://www.linkedin.com/in/michal-bargiel/">
-                <img src="/linkedin-blue.png" alt="LinkedIn logo"></img>
-            </a>
-
-            <a id="github" href="https://github.com/captainCapitalism">
-                <img id="github-logo" src="/github-dark.png" alt="Github Logo"></img>
-            </a>
+            {/* <AnimatedAnchor props={linkedInProps}/> */}
+            <AnimatedAnchor    
+                id={"linkedin"}
+                href={"https://www.linkedin.com/in/michal-bargiel/"}
+                image={"/linkedin-blue.png"}
+                altImage={"31"}
+                altText={"LinkedIn logo"}
+            />
+            
+            <AnimatedAnchor    
+                id={"github"}
+                href={"https://github.com/captainCapitalism"}
+                image={"/github-dark.png"}
+                altImage={"31"}
+                altText={"Github Logo"}
+            />
         
         </nav>
     );

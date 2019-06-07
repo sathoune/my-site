@@ -1,33 +1,31 @@
-.btn-container:hover > .navbar-btn {
-    background-color: #660000;
-    color: #006600;
-    transition: color 0.4s;
-    transition: background-color 0.4s;
-}
-
-
 .navbar-btn {
-    background-color: #006600;
-    color: #000066;
-    border: none;
-
-    text-align: center;
-    outline: none;
-    font-family: inherit;
-    padding: 0 0 0 1em;
-    transition: color 0.4s;
-    transition: background-color 0.4s;
+  background-color: #418607;
+  color: #87072E;
+  border: 2px solid #D20140;
+  text-align: center;
+  font-family: inherit;
+  outline: none;
+  padding: 1em 1em;
+  margin: 0.5% 0.5%;
+  min-width: 10%;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
 
-.navbar-btn-main {
-    margin: 0.2em 0 0.2em 1em;
-    min-height: 3em;
-    min-width: 6em;
+.navbar-btn:first-of-type {
+  margin-left: 2%;
 }
 
-.navbar-btn-after {
-    min-width: 4em;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    margin: 0.2em 0 0.2em 0;
+.navbar-btn:hover {
+  background-color: #5FD101;
+  color: #D20140;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
+
+.navbar-btn:active {
+  background-color: #A60A39;
+  transition: background-color 0.2s;
+}
+
+/*# sourceMappingURL=NavbarButton.css.map */

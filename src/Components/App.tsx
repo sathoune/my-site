@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 import Main from "./Main";
 import Footer from "./Footer";
 
-const App: JSX.Element = () => {
+const App: React.FunctionComponent = () => {
   return (
     <div className={"vbox main vfill hfill"}>
       <Navbar />

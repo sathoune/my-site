@@ -16,8 +16,7 @@ code {
     monospace;
 }
 
-.hbox, .vbox { 
-    display: flex; }
+.hbox, .vbox { display: flex; }
 .hbox { flex-direction: row; }
 .vbox { flex-direction: column; }
 .center { 
@@ -25,10 +24,7 @@ code {
     align-items: center;
 }
 
-.align-start{
-    align-items: flex-start;
-}
-
+.align-start{align-items: flex-start;}
 
 html, body, #root {
     margin: 0;
@@ -71,13 +67,30 @@ p {
 .navbar-anchor {
     align-self: center;
     margin-right: 0.5em;
-}
-.navbar-anchor:hover {
     width: 32px;
     height: 32px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.navbar-anchor:hover {
+ 
     display: block;
     box-sizing: border-box;
     img {
         display: none;
+    }
+}
+
+article {
+    margin: 2.5% 0;
+    width: 80%;
+    header {
+        margin-bottom: 5%;
+        font-size: 2em;
+    }
+    p {
+        margin: 0;
     }
 }

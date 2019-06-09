@@ -78,16 +78,32 @@ p {
 .navbar-anchor {
   align-self: center;
   margin-right: 0.5em;
+  width: 32px;
+  height: 32px;
+}
+.navbar-anchor img {
+  width: 100%;
+  height: auto;
 }
 
 .navbar-anchor:hover {
-  width: 32px;
-  height: 32px;
   display: block;
   box-sizing: border-box;
 }
 .navbar-anchor:hover img {
   display: none;
+}
+
+article {
+  margin: 2.5% 0;
+  width: 80%;
+}
+article header {
+  margin-bottom: 5%;
+  font-size: 2em;
+}
+article p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=App.css.map */

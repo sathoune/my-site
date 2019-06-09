@@ -13,7 +13,7 @@ const AnimatedAnchor: React.FunctionComponent<animatedAnchorProps> = (props) => 
         <a 
             id={props.id} 
             href={props.href}
-            className={"navbar-anchor"}
+            className={"blinking-anchor"}
         >
             <img 
                 src={props.image} 

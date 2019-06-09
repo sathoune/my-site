@@ -5,10 +5,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 .hbox, .vbox {
   display: flex;
 }
@@ -58,9 +54,27 @@ nav {
   min-height: 3em;
 }
 
-p {
-  margin: 5% 10%;
-  text-align: justify;
+.blinking-anchor:first-of-type {
+  margin-left: auto;
+}
+
+.blinking-anchor {
+  align-self: center;
+  margin-right: 0.5em;
+  width: 32px;
+  height: 32px;
+}
+.blinking-anchor img {
+  width: 32px;
+  height: 32px;
+}
+
+.blinking-anchor:hover {
+  display: block;
+  box-sizing: border-box;
+}
+.blinking-anchor:hover img {
+  display: none;
 }
 
 #github:hover {
@@ -69,29 +83,6 @@ p {
 
 #linkedin:hover {
   background: url("/linkedin-white.png") no-repeat;
-}
-
-.navbar-anchor:first-of-type {
-  margin-left: auto;
-}
-
-.navbar-anchor {
-  align-self: center;
-  margin-right: 0.5em;
-  width: 32px;
-  height: 32px;
-}
-.navbar-anchor img {
-  width: 100%;
-  height: auto;
-}
-
-.navbar-anchor:hover {
-  display: block;
-  box-sizing: border-box;
-}
-.navbar-anchor:hover img {
-  display: none;
 }
 
 article {
@@ -104,6 +95,7 @@ article header {
 }
 article p {
   margin: 0;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=App.css.map */

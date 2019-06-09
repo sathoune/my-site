@@ -1,8 +1,24 @@
 import React from "react";
 import NavbarButton from "./NavbarButton";
-import AnimatedAnchor from "./AnimatedAnchor";
+import AnimatedAnchor, {animatedAnchorProps} from "./AnimatedAnchor";
 
 const placeholder = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {console.log("hi")};
+
+const linkedInProps: animatedAnchorProps = {
+    id: "linkedin",
+    href: "https://www.linkedin.com/in/michal-bargiel/",
+    image: "/linkedin-blue.png",
+    altImage: "31",
+    altText: "LinkedIn logo"
+}
+
+const gitHubProps: animatedAnchorProps = {
+    id: "github",
+    href: "https://github.com/captainCapitalism",
+    image: "/github-dark.png",
+    altImage: "31",
+    altText: "Github Logo"
+}
 
 const Navbar: React.FunctionComponent = () => {
     return (
@@ -24,23 +40,8 @@ const Navbar: React.FunctionComponent = () => {
                 exec={placeholder}
             />
 
-            {/* <AnimatedAnchor props={linkedInProps}/> */}
-            <AnimatedAnchor    
-                id={"linkedin"}
-                href={"https://www.linkedin.com/in/michal-bargiel/"}
-                image={"/linkedin-blue.png"}
-                altImage={"31"}
-                altText={"LinkedIn logo"}
-            />
-            
-            <AnimatedAnchor    
-                id={"github"}
-                href={"https://github.com/captainCapitalism"}
-                image={"/github-dark.png"}
-                altImage={"31"}
-                altText={"Github Logo"}
-            />
-        
+            <AnimatedAnchor {...linkedInProps} />
+            <AnimatedAnchor {...gitHubProps} />
         </nav>
     );
 };

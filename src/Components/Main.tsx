@@ -6,8 +6,8 @@ const Main: React.FunctionComponent = () => {
     return (<main className={"vbox center"}>
         <Article {...articles.aboutMe} />
         <Article {...articles.fancyArticle} />
-        <Article {...articles.fancyArticle} />
-        <Article {...{...articles.fancyArticle, title: "WHAT FUCK I DID JUST BRING UPON THIS CURSED LAND"}} />
+        <Article {...articles.skills} />
+        <Article {...articles.portfolio} />
     </main>);
 }
 export default Main;

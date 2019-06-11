@@ -3,25 +3,79 @@ interface Article {
     text: string
 };
 
-const fancyArticle: Article = {
-    title: "About you",
-    text: `Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-    Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-    Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-    Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.`
-};
-
 const aboutMe: Article = {
     title: "About me",
-    text: `Piszę programy, 
-    śpiewam, tańczę i gotuję. 
-    Jem, śpię i rozkazuję.`
+    text: `I believe I am creator. Not a programmer nor a software developer. I think that because more than spending time in front of keyboard, I enjoy making things. 
+    However one often needs expensive tools or expendable materials that he makes objects with. It is difficult to move them around and to share the result with others. To program one is only required to possess computer and Internet access which both are pretty common to have. 
+    That is why I find creating software more convenient for me. Developer still needs to have professional expertise as well as to put time and effort to achieve quality work; however, I greatly enjoy tinkering, solving problems and learning new concepts which allow me to learn quickly and achieve results.
+    `
+
+};
+
+const fancyArticle: Article = {
+    title: "More about me",
+    text: `
+    When I do not code I greatly enjoy dedicating my time to the world of tea. Gong Fu sessions help me regain focus and relax between challenging tasks during day while are also exquisite experience from sensorical point of view. I try to cultivate awareness of reality. Observing and noticing patterns, structures or abstraction in everyday life improves my understanding of processes that we are subject of while enhances my problem solving ability which is also crucial in my professional interest.
+    `
+};
+
+const skills: Article = {
+    title: "What can I do",
+    text: `I used: 
+    JS: es6, functional-style programming, jQuery, ; 
+    node.js/npm: express; 
+    html: HTML5, ejs, pug; 
+    css: CSS3, SCSS; 
+    git/github;
+    react: functional/class based components, hooks;
+    redux: ;
+    tests: mocha+chai;
+    `
+};
+
+const portfolio: Article = {
+    title: "WHAT FUCK I DID JUST BRING UPON THIS CURSED LAND",
+    text: `
+    teahouse POS system:
+	Purpose: To abandon Excel sheet as a way to store orders and to create solution that will make harder for users to make a mistake.
+	Stack:
+html/css + vanilla.js
+node.js/express
+mongoDB
+	Result:
+Solution was complete and functional and beside starting functionality of storing orders I enhanced it by weekly ToDo list for employees, reservation system, archive and statistics for items ordered.
+	
+Takeaway:
+	I have learnt how to split big idea into digestible chunks that can be realized during short periods of time, iterate through a product by allowing it to scale by developing new features. 
+	Solution nowadays does not satisfy me so I am refactoring it because I got better grasp on how to plan and modularize code and I have learnt new technics that I am eager to try. 
+	Attempt could be find here. My plan is to use again express and mongoDB on backend and try to program in TDD methodology with mocha/chai testing framework. Backend shall be separated from Frontend so I would like to finish before creating UI. For frontend I am going to use React/Redux hopefully with TDD as well.
+
+spotify-folders:
+
+Purpose: 
+	My Spotify saved albums exceeded count of 300 and proved difficulties while finding music I would like to listen. Native playlist were not really sufficient for me and feature of grouping albums into folders was promised to not be made by Spotify Support.
+
+
+Stack:
+	React + Redux
+	SpotifyAPI as backend
+	JSON as storage
+
+Result:
+	User is able to create a folder inside which is basic data about selected albums. Clicking album cover redirects to Spotify web player (or desktop app if user agreed in app’s settings to do so). One can assign album to multiple folders so they can act also as tags.
+
+
+Takeaway:
+	I have learnt how to use Spotify Dev API and how to use Redux patterns with React. I have decided to not use class-based React components but functional components and hooks for updates and managing local state.
+
+    `
 };
 
 const articles = {
     aboutMe,
-    fancyArticle
-}
+    fancyArticle,
+    skills,
+    portfolio
+};
 
 export default articles;

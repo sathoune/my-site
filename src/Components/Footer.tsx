@@ -22,7 +22,6 @@ const Footer: React.FunctionComponent = () => {
     return (
         <footer className="hbox">
             bye    
-
             <AnimatedAnchor {...linkedInProps} />
             <AnimatedAnchor {...gitHubProps} />
         </footer>

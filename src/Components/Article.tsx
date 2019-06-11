@@ -1,16 +1,24 @@
 import React from 'react';
 
-interface articleProps {
-    title: string,
-    text: string,
-}
+export interface ArticleProps {
+    name: string,
+    htmlElement: string,
+    content: Array<ArticleProps> | string
+};
 
-const Article: React.FunctionComponent<articleProps> = ({title, text}) => {
-    return (
+
+
+const Article: React.FunctionComponent<ArticleProps> = ({name, htmlElement, content}) => { 
+    return (typeof(content) === "string") ? (
         <article className={'vbox align-start'}>
-            <header>{title}</header>
-            <p>{text}</p>
+            <header>{name}</header>
+            <p>{content}</p>
         </article>
+    ) : (
+        <article className={'vbox align-start'}>
+            <header>{name}</header>
+            {content.map( child => <Article {...child} />)}
+        </article>    
     )
 }
 

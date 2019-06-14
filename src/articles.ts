@@ -1,38 +1,46 @@
 import {ArticleProps} from "./Components/Article";
 
 const aboutMe: ArticleProps = {
-    name: "About me",
-    htmlElement: "div",
+    name: 'About0',
+    htmlTag: "div",
     content: [{
+            name: 'headline0',
+            htmlTag: "h2",
+            content: `Abut me`    
+        },{
             name: "paragraph0",
-            htmlElement: "p",
+            htmlTag: "p",
             content: `I believe I am creator. 
             Not a programmer nor a software developer. 
             I think that because more than spending time in front of keyboard, I enjoy making things.` 
         },{
             name: "paragraph1",
-            htmlElement: "p",
+            htmlTag: "p",
             content: `However one often needs expensive tools or expendable materials that he makes objects with. It is difficult to move them around and to share the result with others.
             To program one is only required to possess computer and Internet access which both are pretty common to have.`
         },{
             name: "paragraph2",
-            htmlElement: "p",
+            htmlTag: "p",
             content: `That is why I find creating software more convenient for me. Developer still needs to have professional expertise as well as to put time and effort to achieve quality work; however, I greatly enjoy tinkering, solving problems and learning new concepts which allow me to learn quickly and achieve results.`
         }]
 };
 
 const fancyArticle: ArticleProps = {
-    name: "More about me",
-    htmlElement: "div",
+    name: "about1",
+    htmlTag: "div",
     content: [{
+        name: 'headline0',
+        htmlTag: 'h2',
+        content: 'More about me'
+    },{
         name: "paragraph0",
-        htmlElement: "p",
+        htmlTag: "p",
         content: `When I do not code I greatly enjoy dedicating my time to the world of tea. 
         Gong Fu sessions help me regain focus and relax between challenging tasks during day 
         while are also exquisite experience from sensorical point of view.`
     },{
         name: "paragraph1",
-        htmlElement: "p",
+        htmlTag: "p",
         content: `I try to cultivate awareness of reality. 
         Observing and noticing patterns, structures or abstraction in everyday life 
         improves my understanding of processes that we are subject of 
@@ -42,11 +50,15 @@ const fancyArticle: ArticleProps = {
 };
 
 const skills: ArticleProps = {
-    name: "What can I do",
-    htmlElement: "div",
+    name: "skills0",
+    htmlTag: "div",
     content: [{
+        name: 'headline',
+        htmlTag: 'h2',
+        content: 'Skills'
+    },{
         name: "paragraph0",
-        htmlElement: "p",
+        htmlTag: "p",
         content: `I used: 
         JS: es6, functional-style programming, jQuery, ; 
         node.js/npm: express; 
@@ -60,11 +72,15 @@ const skills: ArticleProps = {
 };
 
 const portfolio: ArticleProps = {
-    name: "WHAT THE FUCK I DID JUST BRING UPON THIS CURSED LAND",
-    htmlElement: "div",
+    name: 'projects',
+    htmlTag: "div",
     content: [{
+        name: 'headline',
+        htmlTag: 'h2',
+        content: 'Projects'
+    },{
         name: "project0",
-        htmlElement: "div",
+        htmlTag: "div",
         content: `
         teahouse POS system:
         Purpose: To abandon Excel sheet as a way to store orders and to create solution that will make harder for users to make a mistake.
@@ -81,7 +97,7 @@ const portfolio: ArticleProps = {
         Attempt could be find here. My plan is to use again express and mongoDB on backend and try to program in TDD methodology with mocha/chai testing framework. Backend shall be separated from Frontend so I would like to finish before creating UI. For frontend I am going to use React/Redux hopefully with TDD as well.`    
     },{
         name: "project1",
-        htmlElement: "div",
+        htmlTag: "div",
         content: `spotify-folders:
 
         Purpose: 
@@ -107,7 +123,7 @@ const portfolio: ArticleProps = {
 
 const articles: ArticleProps = {
     name: "data",
-    htmlElement: "div",
+    htmlTag: "div",
     content: [
         aboutMe,
         fancyArticle,

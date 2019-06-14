@@ -2,24 +2,17 @@ import React from 'react';
 
 export interface ArticleProps {
     name: string,
-    htmlElement: string,
+    htmlTag: string,
+    properties?: string,
     content: Array<ArticleProps> | string
 };
 
+const Article: React.FunctionComponent<ArticleProps> = ({htmlTag, properties, content}) => ( 
+    (typeof(content) === "string") ? 
+    ( React.createElement(htmlTag, properties, content) ) 
+    : 
+    ( React.createElement( htmlTag, properties, content.map( child => ( <Article {...child} />))))
+)
 
-
-const Article: React.FunctionComponent<ArticleProps> = ({name, htmlElement, content}) => { 
-    return (typeof(content) === "string") ? (
-        <article className={'vbox align-start'}>
-            <header>{name}</header>
-            <p>{content}</p>
-        </article>
-    ) : (
-        <article className={'vbox align-start'}>
-            <header>{name}</header>
-            {content.map( child => <Article {...child} />)}
-        </article>    
-    )
-}
 
 export default Article;

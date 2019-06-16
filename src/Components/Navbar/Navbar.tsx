@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarButton from "./NavbarButton";
-import AnimatedAnchor, {animatedAnchorProps} from "./AnimatedAnchor";
+import NavbarButton from "../NavbarButton/NavbarButton";
+import AnimatedAnchor, {animatedAnchorProps} from "../AnimatedAnchor/AnimatedAnchor";
 
 const placeholder = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {console.log("hi")};
 

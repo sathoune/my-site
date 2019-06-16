@@ -1,6 +1,6 @@
 import React from "react";
-import Article from "./Article";
-import articles from "../articles";
+import Article from "../Article/Article";
+import articles from "../../articles";
 
 const Main: React.FunctionComponent = () => {
     return (

@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import AnimatedAnchor, {animatedAnchorProps} from "./AnimatedAnchor";
+import "../App.css";
+import AnimatedAnchor, {animatedAnchorProps} from "../AnimatedAnchor/AnimatedAnchor";
 
 const linkedInProps: animatedAnchorProps = {
     id: "linkedin",

@@ -1,13 +1,24 @@
 import React from 'react'
 import './FancyBox.css';
 
-const FancyBox: React.FunctionComponent = () => {
+interface FancyBoxProps {
+    backgroundImage: string,
+    hiddenContent: string
+}
+
+const FancyBox: React.FunctionComponent<FancyBoxProps> = ({backgroundImage, hiddenContent}) => {
+    const style = {
+        background: `center url(${backgroundImage})`,
+        backgroundSize: '200px auto',
+        backgroundRepeat: 'no-repeat',
+    }
+    
     return (
     <div className="flex">
-        <div className="fancy-box placeholder" id="root">
-            <div className="content">
+        <div className="fancy-box" id="root">
+            <div style={style} className="content">
                 <div className="hidden-content">
-                    surprise
+                    {hiddenContent}
                 </div>
             </div>
         </div>

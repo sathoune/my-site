@@ -17,13 +17,10 @@ $margin-transition: 1/2;
   }
 }
 
-.placeholder {
- background-color: red;
- margin: 0;
+.fancy-box {
+
  width: $width;
  height: $height;
-}
-.fancy-box {
  transition: all 0.5s ease;
 }
 .fancy-box:hover { transform: scale($transform-scale);}
@@ -38,7 +35,6 @@ $margin-transition: 1/2;
  padding: 0; 
  border-top:    $border-thicc solid black; 
  border-left:   $border-thicc solid black;
- background-color: blue;
  transition: margin 1s;
 }
 .fancy-box::after {
@@ -51,17 +47,16 @@ $margin-transition: 1/2;
  padding: 0 0 0 0; 
  border-bottom: $border-thicc solid black; 
  border-right:  $border-thicc solid black;
- background-color: blue;
  transition: margin 1s;
 }
 
 .content {
- width: $width;
- height: $height;
- background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png");
+  width: $width;
+  height: $height;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png");
   background-size: $height $width;
- position: relative;
- top: -($pseudo-height);
+  position: relative;
+  top: -($pseudo-height);
 }
 
 .content:hover > .hidden-content {

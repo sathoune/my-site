@@ -6,6 +6,9 @@ const Main: React.FunctionComponent = () => {
     return (
     <main className={"vbox center"}>
         <Article {...articles} />
+        <div style={{display: 'flex', flexWrap: 'wrap'}}>
+     
+        </div>
     </main>);
 }
 export default Main;

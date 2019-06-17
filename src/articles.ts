@@ -1,4 +1,13 @@
 import {ArticleProps} from './Components/Article/Article';
+import FancyBox from './Components/FancyBox/FancyBox';
+
+
+const reactImage = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+const nodeImage = "http://pluspng.com/img-png/nodejs-png-nodejs-icon-png-50-px-1600.png";
+const cssLogo = "https://cdn.worldvectorlogo.com/logos/css3.svg";
+const mongoLogo = "https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg";
+const gitLogo = "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png";
+
 
 const aboutMe: ArticleProps = {
     name: 'About0',
@@ -57,18 +66,30 @@ const skills: ArticleProps = {
         name: 'headline',
         htmlTag: 'h2',
         content: 'Skills'
-    },{
+    } , {
         name: 'paragraph0',
         htmlTag: 'p',
-        content: `I used: 
-        JS: es6, functional-style programming, jQuery, ; 
-        node.js/npm: express; 
-        html: HTML5, ejs, pug; 
-        css: CSS3, SCSS; 
-        git/github;
-        react: functional/class based components, hooks;
-        redux: ;
-        tests: mocha+chai;`
+        content: [{
+            name: 'js',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
+                hiddenContent: "es6, functional-style programming, jQuery, "
+            },
+            content: ""    
+        }, {
+            name: 'rest',
+            htmlTag: 'p',
+            content: `I used:  
+            node.js/npm: express; 
+            html: HTML5, ejs, pug; 
+            css: CSS3, SCSS; 
+            git/github;
+            react: functional/class based components, hooks;
+            redux: ;
+            tests: mocha+chai;`
+    
+        }]    
     }]
 };
 

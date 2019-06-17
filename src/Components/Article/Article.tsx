@@ -2,8 +2,8 @@ import React from 'react';
 
 export interface ArticleProps {
     name: string,
-    htmlTag: string,
-    properties?: string,
+    htmlTag: string | React.FunctionComponent<any>,
+    properties?: any,
     content: Array<ArticleProps> | string
 };
 

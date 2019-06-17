@@ -1,8 +1,6 @@
 import React from "react";
 import "./NavbarButton.css";
 
-// export type buttonFunction = (event: MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-
 export interface NavbarButtonProps {
     text: string,
     exec: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void

@@ -14,12 +14,10 @@ const FancyBox: React.FunctionComponent<FancyBoxProps> = ({backgroundImage, hidd
     }
     
     return (
-    <div className="flex">
-        <div className="fancy-box" id="root">
-            <div style={style} className="content">
-                <div className="hidden-content">
-                    {hiddenContent}
-                </div>
+    <div className="fancy-box">
+        <div style={style} className="fancy-content">
+            <div className="fancy-hidden-content">
+                {hiddenContent}
             </div>
         </div>
     </div>

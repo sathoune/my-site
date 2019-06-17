@@ -1,13 +1,15 @@
 import {ArticleProps} from './Components/Article/Article';
 import FancyBox from './Components/FancyBox/FancyBox';
 
-
-const reactImage = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+const jsImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png";
+const reactImage = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png";
 const nodeImage = "http://pluspng.com/img-png/nodejs-png-nodejs-icon-png-50-px-1600.png";
 const cssLogo = "https://cdn.worldvectorlogo.com/logos/css3.svg";
 const mongoLogo = "https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg";
 const gitLogo = "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png";
-
+const reduxLogo = "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png";
+const htmlLogo = "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png";
+const mochaLogo = "https://cldup.com/xFVFxOioAU.svg";
 
 const aboutMe: ArticleProps = {
     name: 'About0',
@@ -67,28 +69,83 @@ const skills: ArticleProps = {
         htmlTag: 'h2',
         content: 'Skills'
     } , {
-        name: 'paragraph0',
-        htmlTag: 'p',
+        name: 'fancy-boxes',
+        htmlTag: 'div',
+        properties: {
+           className: "fancy-parent"
+        },
         content: [{
             name: 'js',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
+                backgroundImage: jsImage,
                 hiddenContent: "es6, functional-style programming, jQuery, "
             },
             content: ""    
         }, {
-            name: 'rest',
-            htmlTag: 'p',
-            content: `I used:  
-            node.js/npm: express; 
-            html: HTML5, ejs, pug; 
-            css: CSS3, SCSS; 
-            git/github;
-            react: functional/class based components, hooks;
-            redux: ;
-            tests: mocha+chai;`
-    
+            name: 'node',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: nodeImage,
+                hiddenContent: "npm, express"
+            },
+            content: ""
+        },{
+            name: 'react',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: reactImage,
+                hiddenContent: 'functional/class based components, hooks'
+            },
+            content: ""
+        }, {
+            name: 'css',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: cssLogo,
+                hiddenContent: 'CSS3, SCSS'
+            },
+            content: ""
+        }, {
+            name: 'redux',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: reduxLogo,
+                hiddenContent: 'usage with react'
+            },
+            content: ""
+        }, {
+            name: 'git',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: gitLogo,
+                hiddenContent: 'github'
+            },
+            content: ""
+        } , {
+            name: 'html',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: htmlLogo,
+                hiddenContent: "HTML5, ejs, pug, semantic markup"
+            },
+            content: ""
+        } ,{
+            name: 'testin',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: mochaLogo,
+                hiddenContent: "mocha+chai, tdd, bdd, unit, integration, functional testing"
+            },
+            content: ""
+        } , {
+            name: 'mongodb',
+            htmlTag: FancyBox,
+            properties: {
+                backgroundImage: mongoLogo,
+                hiddenContent: "idk right?"
+            },
+            content: "" 
         }]    
     }]
 };

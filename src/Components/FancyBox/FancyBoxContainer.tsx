@@ -1,11 +1,11 @@
 import React from 'react';
 import FancyBox, {FancyBoxProps} from './FancyBox';
 
-export interface FancyBoxParentProps {
+export interface FancyBoxContainerProps {
   fancyBoxes: Array<FancyBoxProps>
 }
 
-const FancyBoxParent: React.FunctionComponent<FancyBoxParentProps> = 
+const FancyBoxContainer: React.FunctionComponent<FancyBoxContainerProps> = 
 ({fancyBoxes}) => {
   return (
     <div>
@@ -15,4 +15,4 @@ const FancyBoxParent: React.FunctionComponent<FancyBoxParentProps> =
   );
 }
 
-export default FancyBoxParent;
+export default FancyBoxContainer;

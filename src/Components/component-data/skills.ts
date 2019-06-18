@@ -1,4 +1,4 @@
-import { FancyBoxParentProps } from '../FancyBox/FancyBoxParent';
+import { FancyBoxContainerProps } from '../FancyBox/FancyBoxContainer';
 import { FancyBoxProps } from '../FancyBox/FancyBox';
 
 const logoData = {
@@ -99,7 +99,7 @@ const fancyBoxes:Array<FancyBoxProps> = [
     } ,
 ]
 
-const skills: FancyBoxParentProps = {
+const skills: FancyBoxContainerProps = {
     fancyBoxes
 }
 

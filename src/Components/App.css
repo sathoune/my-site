@@ -89,14 +89,13 @@ nav {
   justify-self: center;
   width: 90%;
 }
-.article h2, .article p {
-  margin: 2% 5%;
-}
 .article h2 {
+  margin: 2% 5%;
   font-size: 2em;
 }
 .article p {
   text-align: justify;
+  margin: 2% 10%;
 }
 
 article {

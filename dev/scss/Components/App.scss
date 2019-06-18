@@ -75,15 +75,15 @@ nav {
 .article {
     justify-self: center;
     width: 90%;
-    h2, p {
-        margin: 2% 5%;
-    }
     h2 {
+        margin: 2% 5%;
         font-size: 2em;
     }
 
     p {
         text-align: justify;
+        margin: 2% 10%;
+   
     }
 }
 

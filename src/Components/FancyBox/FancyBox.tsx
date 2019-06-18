@@ -3,10 +3,15 @@ import './FancyBox.css';
 
 interface FancyBoxProps {
     backgroundImage: string,
-    hiddenContent: string
+    hiddenProps: HiddenContentProps
 }
 
-const FancyBox: React.FunctionComponent<FancyBoxProps> = ({backgroundImage, hiddenContent}) => {
+interface HiddenContentProps {
+    content: string,
+    backgroundColor: string
+}
+
+const FancyBox: React.FunctionComponent<FancyBoxProps> = ({backgroundImage, hiddenProps}) => {
     const style = {
         background: `center url(${backgroundImage})`,
         backgroundSize: '200px auto',
@@ -16,11 +21,20 @@ const FancyBox: React.FunctionComponent<FancyBoxProps> = ({backgroundImage, hidd
     return (
     <div className="fancy-box">
         <div style={style} className="fancy-content">
-            <div className="fancy-hidden-content">
-                {hiddenContent}
-            </div>
+            <FancyBoxHiddenContent {...hiddenProps} />
         </div>
     </div>
+    )
+}
+
+const FancyBoxHiddenContent: React.FunctionComponent<HiddenContentProps> = ({content, backgroundColor}) => {
+    const style = {
+        background: backgroundColor
+    }
+    return (
+            <div style={style} className="fancy-hidden-content">
+                {content}
+            </div>
     )
 }
 

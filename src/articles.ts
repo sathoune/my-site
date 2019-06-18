@@ -1,17 +1,47 @@
-import {ArticleProps} from './Components/Article/Article';
+import {FactoryProps} from './Components/Factory/Factory';
 import FancyBox from './Components/FancyBox/FancyBox';
+import Article from './Components/Article/Article';
 
-const jsImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png";
-const reactImage = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png";
-const nodeImage = "http://pluspng.com/img-png/nodejs-png-nodejs-icon-png-50-px-1600.png";
-const cssLogo = "https://cdn.worldvectorlogo.com/logos/css3.svg";
-const mongoLogo = "https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg";
-const gitLogo = "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png";
-const reduxLogo = "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png";
-const htmlLogo = "https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png";
-const mochaLogo = "https://cldup.com/xFVFxOioAU.svg";
+const logoData = {
+    js: {
+        color: '#f7df1e',
+        img: 'logos/js.png' 
+    },
+    css: {
+        color: '#2062af',
+        img: 'logos/css.png'
+    },
+    git: {
+        color: '#f05033',
+        img: 'logos/git.png'
+    },
+    html: { 
+        color: '#e44d26',
+        img: 'logos/html.png'
+    },
+    mocha: {
+        color: '#8d6748',
+        img: 'logos/mocha.png'
+    },
+    mongo: {
+        color: '#499d4a',
+        img: 'logos/mongodb.png'
+    },
+    node: {
+        color: '#4bae4f',
+        img: 'logos/node.png'
+    },
+    react: {
+        color: '#00d8ff',
+        img: 'logos/react.png'
+    },
+    redux: {
+        color: '#764abc',
+        img: 'logos/redux.png'
+    },
+}
 
-const aboutMe: ArticleProps = {
+const aboutMe: FactoryProps = {
     name: 'About0',
     htmlTag: 'div',
     content: [{
@@ -37,7 +67,7 @@ const aboutMe: ArticleProps = {
         }]
 };
 
-const fancyArticle: ArticleProps = {
+const fancyArticle: FactoryProps = {
     name: 'about1',
     htmlTag: 'div',
     content: [{
@@ -61,7 +91,7 @@ const fancyArticle: ArticleProps = {
     }]
 };
 
-const skills: ArticleProps = {
+const skills: FactoryProps = {
     name: 'skills0',
     htmlTag: 'div',
     content: [{
@@ -78,79 +108,106 @@ const skills: ArticleProps = {
             name: 'js',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: jsImage,
-                hiddenContent: "es6, functional-style programming, jQuery, "
+                backgroundImage: logoData.js.img,
+                hiddenProps: {
+                    content: "es6, functional-style programming, jQuery, ",
+                    backgroundColor: logoData.js.color
+                }
             },
             content: ""    
         }, {
             name: 'node',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: nodeImage,
-                hiddenContent: "npm, express"
+                backgroundImage: logoData.node.img,
+                hiddenProps: {
+                    content: "npm, express, RESTful API",
+                    backgroundColor: logoData.node.color
+                }
             },
             content: ""
         },{
             name: 'react',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: reactImage,
-                hiddenContent: 'functional/class based components, hooks'
+                backgroundImage: logoData.react.img,
+                hiddenProps: {
+                    content: 'functional/class based components, hooks',
+                    backgroundColor: logoData.react.color
+                }
             },
             content: ""
         }, {
             name: 'css',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: cssLogo,
-                hiddenContent: 'CSS3, SCSS'
+                backgroundImage: logoData.css.img,
+                hiddenProps: {
+                    content: 'CSS3, SCSS, Responsive Web Design',
+                    backgroundColor: logoData.css.color
+                }
             },
             content: ""
         }, {
             name: 'redux',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: reduxLogo,
-                hiddenContent: 'usage with react'
+                backgroundImage: logoData.redux.img,
+                hiddenProps: {
+                    content: 'usage with react',
+                    backgroundColor: logoData.redux.color
+                }
             },
             content: ""
         }, {
             name: 'git',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: gitLogo,
-                hiddenContent: 'github'
+                backgroundImage: logoData.git.img,
+                hiddenProps: {
+                    content: 'github',
+                    backgroundColor: logoData.git.color
+                }
             },
             content: ""
         } , {
             name: 'html',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: htmlLogo,
-                hiddenContent: "HTML5, ejs, pug, semantic markup"
+                backgroundImage: logoData.html.img,
+                hiddenProps: {
+                    content: "HTML5, ejs, pug, semantic markup",
+                    backgroundColor: logoData.html.color
+                }
             },
             content: ""
-        } ,{
+        } , {
             name: 'testin',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: mochaLogo,
-                hiddenContent: "mocha+chai, tdd, bdd, unit, integration, functional testing"
+                backgroundImage: logoData.mocha.img,
+                hiddenProps: {
+                    content: "mocha+chai, tdd, bdd, unit, integration, functional testing",
+                    backgroundColor: logoData.mocha.color
+                }
             },
             content: ""
         } , {
             name: 'mongodb',
             htmlTag: FancyBox,
             properties: {
-                backgroundImage: mongoLogo,
-                hiddenContent: "idk right?"
+                backgroundImage: logoData.mongo.img,
+                hiddenProps: {
+                    content: "idk right?",
+                    backgroundColor: logoData.mongo.color
+                }
             },
             content: "" 
         }]    
     }]
 };
 
-const portfolio: ArticleProps = {
+const portfolio: FactoryProps = {
     name: 'projects',
     htmlTag: 'div',
     content: [{
@@ -200,7 +257,7 @@ const portfolio: ArticleProps = {
     }]
 };
 
-const articles: ArticleProps = {
+const articles: FactoryProps = {
     name: 'data',
     htmlTag: 'div',
     content: [

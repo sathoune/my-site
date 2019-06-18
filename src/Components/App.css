@@ -86,7 +86,17 @@ nav {
 }
 
 .article {
-  width: 80%;
+  justify-self: center;
+  width: 90%;
+}
+.article h2, .article p {
+  margin: 2% 5%;
+}
+.article h2 {
+  font-size: 2em;
+}
+.article p {
+  text-align: justify;
 }
 
 article {
@@ -96,10 +106,6 @@ article {
 article header {
   margin-bottom: 5%;
   font-size: 2em;
-}
-article p {
-  margin: 0;
-  text-align: justify;
 }
 
 /*# sourceMappingURL=App.css.map */

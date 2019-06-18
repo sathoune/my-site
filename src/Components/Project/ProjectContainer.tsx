@@ -8,7 +8,7 @@ export interface ProjectContainerProps {
 const ProjectContainer: React.FunctionComponent<ProjectContainerProps> = 
 ({projectsProps}) => {
   return (
-    <div className={"article"}>
+    <div className={"article vbox center"}>
       <h2>Projects</h2>
       {projectsProps.map( projectProps => <Project {...projectProps} />)}
     </div>    

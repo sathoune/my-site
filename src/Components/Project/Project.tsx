@@ -9,7 +9,9 @@ export interface ProjectProps {
 const Project: React.FunctionComponent<ProjectProps> = 
 ({hContent, articlesContent}) => {
   return (
-    <div>
+    <div 
+      className={"article"}
+    >
       <h2>{hContent}</h2>
       {articlesContent.map(article => <Article {...article}/>)}
     </div>

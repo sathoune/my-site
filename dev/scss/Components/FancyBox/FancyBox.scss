@@ -16,7 +16,7 @@ $fancy-box-margin-ratio: $height/4 $width/4;
     opacity: 1;
   }
 }
-.fancy-parent {
+.fancy-box-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,5 +76,7 @@ $fancy-box-margin-ratio: $height/4 $width/4;
   height: $height;
   background-color: green;
   position: absolute;
+  display: flex;
+  align-items: center;
   opacity: 0;
 }

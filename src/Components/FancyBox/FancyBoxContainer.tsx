@@ -15,7 +15,7 @@ const FancyBoxContainer: React.FunctionComponent<FancyBoxContainerProps> =
       <div 
         className={"fancy-box-container"}
       > 
-        {fancyBoxes.map(boxProps => <FancyBox {...boxProps}/>)}
+        {fancyBoxes.map(boxProps => <FancyBox key={boxProps.id} {...boxProps}/>)}
       </div>
     </div>
   )

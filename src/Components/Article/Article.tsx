@@ -2,11 +2,16 @@ import React from 'react'
 
 export interface ArticleProps {
   hContent: string,
-  pContent: Array<string>
+  paragraphs: Array<pProps>
+}
+
+export interface pProps {
+  key: string,
+  content: string
 }
 
 const Article: React.FunctionComponent<ArticleProps> = 
-({hContent, pContent}) => {
+({hContent, paragraphs}) => {
   return (
     <div 
       className={"article"}
@@ -14,7 +19,7 @@ const Article: React.FunctionComponent<ArticleProps> =
       <h2>
         {hContent}
       </h2>
-      {pContent.map(txt => <p>{txt}</p>)}
+      {paragraphs.map(txt => <p key={txt.key}>{txt.content}</p>)}
     </div>
   )
 }

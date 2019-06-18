@@ -70,6 +70,8 @@
   height: 200px;
   background-color: green;
   position: absolute;
+  display: flex;
+  align-items: center;
   opacity: 0;
 }
 

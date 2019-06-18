@@ -6,14 +6,18 @@ export interface ProjectProps {
   articlesContent: Array<ArticleProps>
 }
 
+const hStyle = {
+  marginLeft: '10%'
+}
+
 const Project: React.FunctionComponent<ProjectProps> = 
 ({hContent, articlesContent}) => {
   return (
     <div 
       className={"article"}
     >
-      <h2>{hContent}</h2>
-      {articlesContent.map(article => <Article {...article}/>)}
+      <h2 style={hStyle}>{hContent}</h2>
+      {articlesContent.map(article => <Article key={article.hContent} {...article}/>)}
     </div>
   )
 }

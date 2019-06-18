@@ -1,5 +1,5 @@
-import { FancyBoxContainerProps } from '../FancyBox/FancyBoxContainer';
-import { FancyBoxProps } from '../FancyBox/FancyBox';
+import { FancyBoxContainerProps } from '../FancyBox/FancyBoxContainer'
+import { FancyBoxProps } from '../FancyBox/FancyBox'
 
 const logoData = {
   js: {
@@ -42,61 +42,102 @@ const logoData = {
 
 
 const fancyBoxes:Array<FancyBoxProps> = [
-    {
-        backgroundImage: logoData.js.img,
-        hiddenProps: {
-            content: "es6, functional-style programming, jQuery, ",
-            backgroundColor: logoData.js.color
-        }
-    } , {
-        backgroundImage: logoData.node.img,
-        hiddenProps: {
-            content: "npm, express, RESTful API",
-            backgroundColor: logoData.node.color
-        },
-    } , {
-        backgroundImage: logoData.react.img,
-        hiddenProps: {
-            content: 'functional/class based components, hooks',
-            backgroundColor: logoData.react.color
-        }
-    } , {
-        backgroundImage: logoData.css.img,
-        hiddenProps: {
-            content: 'CSS3, SCSS, Responsive Web Design',
-            backgroundColor: logoData.css.color
-        }
-    } , {
-        backgroundImage: logoData.redux.img,
-        hiddenProps: {
-            content: 'usage with react',
-            backgroundColor: logoData.redux.color
-        }
-    } , {
-        backgroundImage: logoData.git.img,
-        hiddenProps: {
-            content: 'github',
-            backgroundColor: logoData.git.color
-        }
-    } , {
-        backgroundImage: logoData.html.img,
-        hiddenProps: {
-            content: "HTML5, ejs, pug, semantic markup",
-            backgroundColor: logoData.html.color
-        }
-    } , {
-        backgroundImage: logoData.mocha.img,
-        hiddenProps: {
-            content: "mocha+chai, tdd, bdd, unit, integration, functional testing",
-            backgroundColor: logoData.mocha.color
-        }
-    } , {
-        backgroundImage: logoData.mongo.img,
-        hiddenProps: {
-            content: "idk right?",
-            backgroundColor: logoData.mongo.color
-        }
-    } ,
+  {
+    id: 'skill-js',
+    backgroundImage: logoData.js.img,
+    hiddenProps: {
+      content: [
+        'es6', 
+        'functional-style programming', 
+        'jQuery',
+      ],
+      backgroundColor: logoData.js.color
+    }
+  } , {
+    id: 'skill-node',
+    backgroundImage: logoData.node.img,
+    hiddenProps: {
+      content: [
+        'express',
+        'npm',
+        'RESTful API',
+      ],
+      backgroundColor: logoData.node.color
+    },
+  } , {
+    id: 'skill-react',
+    backgroundImage: logoData.react.img,
+    hiddenProps: {
+      content: [
+        'functional/class based components', 
+        'hooks',
+      ],
+      backgroundColor: logoData.react.color
+    }
+  } , {
+    id: 'skill-css',
+    backgroundImage: logoData.css.img,
+    hiddenProps: {
+      content: [
+        'CSS3', 
+        'SCSS', 
+        'Responsive Web Design',
+      ],
+      backgroundColor: logoData.css.color
+    }
+  } , {
+    id: 'skill-redux',
+    backgroundImage: logoData.redux.img,
+    hiddenProps: {
+      content: [
+        'usage with react',
+      ],
+      backgroundColor: logoData.redux.color
+    }
+  } , {
+    id: 'skill-git',
+    backgroundImage: logoData.git.img,
+    hiddenProps: {
+      content: [
+        'github',
+      ],
+      backgroundColor: logoData.git.color
+    }
+  } , {
+    id: 'skill-html',
+    backgroundImage: logoData.html.img,
+    hiddenProps: {
+      content: [
+        'HTML5', 
+        'ejs', 
+        'pug', 
+        'semantic markup',
+      ],
+      backgroundColor: logoData.html.color
+    }
+  } , {
+    id: 'skill-mocha',
+    backgroundImage: logoData.mocha.img,
+    hiddenProps: {
+      content: [
+        'chai',
+        'sinon', 
+        'tdd', 
+        'bdd', 
+        'unit, integration, functional testing',
+      ],
+      backgroundColor: logoData.mocha.color
+    }
+  } , {
+    id: 'skill-mongo',
+    backgroundImage: logoData.mongo.img,
+    hiddenProps: {
+      content: [
+        'idk right?',
+      ],
+      backgroundColor: logoData.mongo.color
+    }
+  } ,
 ]
 
 const skills: FancyBoxContainerProps = {

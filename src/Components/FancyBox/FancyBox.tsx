@@ -2,6 +2,7 @@ import React from 'react'
 import './FancyBox.css'
 
 export interface FancyBoxProps {
+  id: string,
   backgroundImage: string,
   hiddenProps: HiddenContentProps
 }
@@ -28,7 +29,7 @@ const FancyBox: React.FunctionComponent<FancyBoxProps> =
 
 
 export interface HiddenContentProps {
-  content: string,
+  content: Array<string>,
   backgroundColor: string
 }
 
@@ -42,7 +43,9 @@ const FancyBoxHiddenContent: React.FunctionComponent<HiddenContentProps> =
       style={style} 
       className="fancy-hidden-content"
     >
-      {content}
+      <ul>
+        {content.map( (item, i) => <li key={i}>{item}</li>)}
+      </ul>
     </div>
   )
 }

@@ -1,15 +1,19 @@
 import React from 'react';
 
-interface ArticleProps {
-
+export interface ArticleProps {
+    hContent: string,
+    pContent: Array<string>
 }
 
-const Article: React.FunctionComponent = () => {
+const Article: React.FunctionComponent<ArticleProps> = ({hContent, pContent}) => {
     const style = {
         width: '80%'
     }
     return (
-        <div style={style}></div>
+        <div style={style}>
+            <h2>{hContent}</h2>
+            {pContent.map(txt => <p>{txt}</p>)}
+        </div>
     )
 }
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import './FancyBox.css';
 
-interface FancyBoxProps {
+export interface FancyBoxProps {
     backgroundImage: string,
     hiddenProps: HiddenContentProps
 }
 
-interface HiddenContentProps {
+export interface HiddenContentProps {
     content: string,
     backgroundColor: string
 }

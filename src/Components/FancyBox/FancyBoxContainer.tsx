@@ -2,14 +2,16 @@ import React from 'react'
 import FancyBox, {FancyBoxProps} from './FancyBox'
 
 export interface FancyBoxContainerProps {
+  id: string,
   fancyBoxes: Array<FancyBoxProps>
 }
 
 const FancyBoxContainer: React.FunctionComponent<FancyBoxContainerProps> = 
-({fancyBoxes}) => {
+({id, fancyBoxes}) => {
   return (
     <div 
-    className={"article"}
+      id={id}
+      className={"article"}
     >
       <h2>Skills</h2>
       <div 

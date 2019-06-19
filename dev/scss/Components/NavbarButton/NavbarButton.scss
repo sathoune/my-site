@@ -3,57 +3,57 @@
 $standard-transition: 0.4s;
 $long-transition: 1s;
 
-.navbar-btn {
-    background-color: $color-primary-0;
-    color: $color-complement-0;
-    border: none;
-
-    text-align: center;
-    font-family: inherit;
-    outline: none;
-
-    padding: 0;
-    margin: 0 0.5%;
-    height: 100%;
-    width: 90px;
-
-
-    transition: color $standard-transition;
-    transition: background-color $standard-transition;
-    transition: font-size $long-transition;
-    transition: width $standard-transition;
-    align-self: center;
-
-}
 
 @media screen and (min-width: 700px) {
-    .navbar-btn {
-        width: 120px;
-    }
+  .navbar-btn {
+    width: 120px;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    .navbar-btn {
-        width: 160px;
-    }
+  .navbar-btn {
+    width: 160px;
+  }
 }
+
+.navbar-btn {
+  background-color: $color-primary-0;
+  color: $color-complement-0;
+  border: none;
+
+  text-align: center;
+  font-family: inherit;
+  outline: none;
+
+  padding: 0;
+  margin: 0 0.5%;
+  height: 100%;
+  width: 90px;
+
+  transition: color $standard-transition;
+  transition: background-color $standard-transition;
+  transition: font-size $long-transition;
+  transition: width $standard-transition;
+  align-self: center;
+}
+
 
 .navbar-btn:first-of-type{margin-left: 2%;}
 
 .navbar-btn:hover {
-    background-color: $color-primary-1;
-    color: $color-complement-1;
-    font-weight: bold;
-    font-size: 1em;
+  background-color: $color-primary-1;
+  color: $color-complement-1;
+  font-weight: bold;
+  font-size: 1em;
 
-    transition: color $standard-transition;
-    transition: background-color $standard-transition;
-    transition: font-size $long-transition;
+  transition: color $standard-transition;
+  transition: background-color $standard-transition;
+  transition: font-size $long-transition;
 }
 
 .navbar-btn:active {
-    background-color: $color-complement-2;
+  background-color: $color-complement-2;
 
-    transition: background-color $standard-transition/2;
-    transition: font-size $long-transition;
+  transition: background-color $standard-transition/2;
+  transition: font-size $long-transition;
 }

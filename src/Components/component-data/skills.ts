@@ -1,5 +1,6 @@
 import { FancyBoxContainerProps } from '../FancyBox/FancyBoxContainer'
 import { FancyBoxProps } from '../FancyBox/FancyBox'
+import ids from './main-ids';
 
 const logoData = {
   js: {
@@ -141,7 +142,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
 ]
 
 const skills: FancyBoxContainerProps = {
-    fancyBoxes
+  id: ids.skills,
+  fancyBoxes
 }
 
-export default skills;
+export default skills

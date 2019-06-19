@@ -1,6 +1,7 @@
 import React from 'react'
 
 export interface ArticleProps {
+  id?: string,
   hContent: string,
   paragraphs: Array<pProps>
 }
@@ -11,9 +12,10 @@ export interface pProps {
 }
 
 const Article: React.FunctionComponent<ArticleProps> = 
-({hContent, paragraphs}) => {
+({id, hContent, paragraphs}) => {
   return (
     <div 
+      id={(id? id : '')}
       className={"article"}
     >
       <h2>

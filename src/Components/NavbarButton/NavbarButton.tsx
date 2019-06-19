@@ -1,21 +1,25 @@
-import React from "react";
-import "./NavbarButton.css";
+import React from "react"
+import "./NavbarButton.css"
 
 export interface NavbarButtonProps {
-    text: string,
-    exec: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
-};
+  text: string,
+  href: string,
+}
 
 export const NavbarButton: React.FunctionComponent<NavbarButtonProps> = 
-    ({text, exec}) => {
-    return (
-        <button 
-            className={"navbar-btn"}
-            onClick={exec}
-        >
-            {text}
-        </button>
-    );
-};
+  ({text, href}) => {
+  return (
+    <a 
+      className = {"navbar-btn"}
+      href={href}
+    >
+      <button 
+        className={"navbar-btn"}
+      >    
+        {text}
+      </button>
+    </a>
+  )
+}
 
-export default NavbarButton;
+export default NavbarButton

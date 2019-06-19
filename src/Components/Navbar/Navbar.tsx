@@ -1,8 +1,8 @@
-import React from "react";
-import NavbarButton from "../NavbarButton/NavbarButton";
-import AnimatedAnchor, {animatedAnchorProps} from "../AnimatedAnchor/AnimatedAnchor";
+import React from "react"
+import NavbarButton from "../NavbarButton/NavbarButton"
+import AnimatedAnchor, {animatedAnchorProps} from "../AnimatedAnchor/AnimatedAnchor"
+import ids from '../component-data/main-ids'
 
-const placeholder = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {console.log("hi")};
 
 const linkedInProps: animatedAnchorProps = {
     id: "linkedin",
@@ -24,20 +24,20 @@ const Navbar: React.FunctionComponent = () => {
     return (
         <nav className={"hbox align-start"}>
             <NavbarButton 
-                text="helo" 
-                exec={placeholder}
+                text="about0" 
+                href={"#" + ids.about0}
             />
             <NavbarButton 
-                text="more helo" 
-                exec={placeholder}
+                text="abou1" 
+                href={"#" + ids.about1}
             />
             <NavbarButton 
-                text="evenmorehelo" 
-                exec={placeholder}
+                text="skills" 
+                href={"#" + ids.skills}
             />
             <NavbarButton 
-                text="lovelyt"
-                exec={placeholder}
+                text="porjeckt"
+                href={"#" + ids.projects}
             />
 
             <AnimatedAnchor {...linkedInProps} />

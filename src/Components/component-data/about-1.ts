@@ -1,6 +1,8 @@
 import { ArticleProps } from '../Article/Article';
+import ids from './main-ids';
 
 const aboutMe1: ArticleProps = {
+  id: ids.about1,
   hContent: 'More about me',
   paragraphs: [
     {

@@ -1,5 +1,6 @@
 import { ProjectProps } from '../Project/Project'
 import { ProjectContainerProps } from '../Project/ProjectContainer'
+import ids from './main-ids';
 
 const projectArray: Array<ProjectProps> = [
   {
@@ -16,10 +17,7 @@ const projectArray: Array<ProjectProps> = [
         hContent: 'Stack',
         paragraphs: [{
           key: 'p0',
-          content: `Stack:
-          html/css + vanilla.js
-          node.js/express
-          mongoDB`
+          content: `MEN stack: MongoDB, express, Node.js`
         }]
       } , {
         hContent: 'Result',
@@ -95,6 +93,7 @@ const projectArray: Array<ProjectProps> = [
 ]
 
 const projects: ProjectContainerProps = {
+  id: ids.projects,
   projectsProps: projectArray
 }
 

@@ -8,9 +8,7 @@ export interface ProjectProps {
   articlesContent: Array<ArticleProps>
 }
 
-const hStyle = {
-  marginLeft: '10%'
-}
+const hStyle = {marginLeft: '10%'}
 
 const Project: React.FunctionComponent<ProjectProps> = 
 ({hContent, githubLink, articlesContent}) => (
@@ -26,8 +24,7 @@ const Project: React.FunctionComponent<ProjectProps> =
     </h2>
     {
       articlesContent.map(
-        article => <Article key={article.hContent} {...article}/>
-      )
+        article => <Article key={article.hContent} {...article}/>)
     }
   </div>
 )

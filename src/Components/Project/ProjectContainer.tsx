@@ -11,13 +11,23 @@ const hStyle = {
 }
 
 const ProjectContainer: React.FunctionComponent<ProjectContainerProps> = 
-({id, projectsProps}) => {
-  return (
-    <div id={id} className={"article vbox center"}>
-      <h2 style={hStyle}>Projects</h2>
-      {projectsProps.map( projectProps => <Project key={projectProps.hContent} {...projectProps} />)}
-    </div>    
-  )
-}
+({id, projectsProps}) => (
+  <div 
+    id={id} 
+    className={"article vbox center"}
+  >
+    <h2 
+      style={hStyle}
+    >
+      Projects
+    </h2>
+    {
+      projectsProps.map( projectProps => 
+        <Project key={projectProps.hContent} {...projectProps} />
+      )
+    }
+  </div>    
+)
+
 
 export default ProjectContainer

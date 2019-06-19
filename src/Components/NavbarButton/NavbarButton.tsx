@@ -7,19 +7,17 @@ export interface NavbarButtonProps {
 }
 
 export const NavbarButton: React.FunctionComponent<NavbarButtonProps> = 
-  ({text, href}) => {
-  return (
-    <a 
-      className = {"navbar-btn"}
-      href={href}
-    >
-      <button 
-        className={"navbar-btn"}
-      >    
-        {text}
-      </button>
-    </a>
-  )
-}
+  ({text, href}) => (
+  <a 
+    className = {"navbar-btn"}
+    href={href}
+  >
+    <button 
+      className={"navbar-btn"}
+    >    
+      {text}
+    </button>
+  </a>
+)
 
 export default NavbarButton

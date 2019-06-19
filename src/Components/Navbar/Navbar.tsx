@@ -14,14 +14,12 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({id}) => (
     className={'hbox align-start'}
   >
     {
-      navbarButtonProps.map( 
-        props => <NavbarButton key={props.href} {...props} />
-      )
+      navbarButtonProps.map( button => 
+        <NavbarButton key={button.href} {...button} />)
     }
     { 
-      animatedLinks.map( 
-        link => <AnimatedAnchor key={link.href} {...link} />
-      ) 
+      animatedLinks.map( link => 
+        <AnimatedAnchor key={link.href} {...link} />) 
     }
   </nav>
 )

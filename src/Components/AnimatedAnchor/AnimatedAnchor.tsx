@@ -10,6 +10,7 @@ export interface animatedAnchorProps {
 const AnimatedAnchor: React.FunctionComponent<animatedAnchorProps> = 
 ({href, image, altImage, altText}) => (
   <a 
+    target="_blank"
     href={href}
     className={`blinking-anchor ${altImage}`}
   >

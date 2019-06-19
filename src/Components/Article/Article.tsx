@@ -12,18 +12,20 @@ export interface pProps {
 }
 
 const Article: React.FunctionComponent<ArticleProps> = 
-({id, hContent, paragraphs}) => {
-  return (
-    <div 
-      id={(id? id : '')}
-      className={"article"}
-    >
-      <h2>
-        {hContent}
-      </h2>
-      {paragraphs.map(txt => <p key={txt.key}>{txt.content}</p>)}
-    </div>
-  )
-}
+({id, hContent, paragraphs}) => (
+  <div 
+    id={(id? id : '')}
+    className={"article"}
+  >
+    <h2>
+      {hContent}
+    </h2>
+    {
+      paragraphs.map(txt => 
+        <p key={txt.key}>{txt.content}</p>)
+    }
+  </div>
+)
+
 
 export default Article

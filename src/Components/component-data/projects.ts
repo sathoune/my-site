@@ -1,10 +1,12 @@
 import { ProjectProps } from '../Project/Project'
 import { ProjectContainerProps } from '../Project/ProjectContainer'
+import projectLinks from './project-links'
 import ids from './main-ids';
 
 const projectArray: Array<ProjectProps> = [
   {
     hContent: 'teahouse POS sstem',
+    githubLink: projectLinks.teaShopProps,
     articlesContent: [
       {
         hContent: 'Purpose',
@@ -52,6 +54,7 @@ const projectArray: Array<ProjectProps> = [
     ]
   } , {
     hContent: 'spotify-folders',
+    githubLink: projectLinks.spotifyProps,
     articlesContent: [
       {
         hContent: 'Purpose',

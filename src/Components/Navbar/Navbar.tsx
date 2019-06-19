@@ -20,7 +20,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({id}) => (
     }
     { 
       animatedLinks.map( 
-        link => <AnimatedAnchor key={link.id} {...link} />
+        link => <AnimatedAnchor key={link.href} {...link} />
       ) 
     }
   </nav>

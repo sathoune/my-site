@@ -1,26 +1,24 @@
-import React from 'react';
+import React from 'react'
 
 export interface animatedAnchorProps {
-    id: string,
-    href: string,
-    image: string,
-    altImage: string,
-    altText: string,
+  href: string,
+  image: string,
+  altImage: string,
+  altText: string,
 }
 
-const AnimatedAnchor: React.FunctionComponent<animatedAnchorProps> = (props) => {
-    return (
-        <a 
-            id={props.id} 
-            href={props.href}
-            className={"blinking-anchor"}
-        >
-            <img 
-                src={props.image} 
-                alt={props.altText}
-            >       
-            </img>
-        </a>);
-}
+const AnimatedAnchor: React.FunctionComponent<animatedAnchorProps> = 
+({href, image, altImage, altText}) => (
+  <a 
+    href={href}
+    className={`blinking-anchor ${altImage}`}
+  >
+    <img 
+      src={image} 
+      alt={altText}
+    >       
+    </img>
+  </a>
+)
 
 export default AnimatedAnchor

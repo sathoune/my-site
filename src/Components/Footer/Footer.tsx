@@ -9,7 +9,7 @@ const Footer: React.FunctionComponent = () => (
     bye    
     {
       animatedLinks.map( 
-        link => <AnimatedAnchor key={link.id} {...link} />
+        link => <AnimatedAnchor key={link.href} {...link} />
       )
     }
   </footer>

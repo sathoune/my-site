@@ -65,10 +65,10 @@ nav {
     img {display: none;} //Hide image so background is visible
 }
 
-#github:hover {
+.github-link:hover {
     background: url("/github-light.png") no-repeat;
 }
-#linkedin:hover {
+.linkedin-link:hover {
     background: url("/linkedin-white.png") no-repeat;
 }
 

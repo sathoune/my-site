@@ -6,6 +6,7 @@ import skills from '../component-data/skills'
 import FancyBoxContainer from '../FancyBox/FancyBoxContainer'
 import projects from '../component-data/projects'
 import ProjectContainer from '../Project/ProjectContainer'
+import ToTopButton from '../ToTopButton/ToTopButton';
 
 const Main: React.FunctionComponent = () => {
     return (
@@ -14,6 +15,7 @@ const Main: React.FunctionComponent = () => {
             <Article {...aboutMe1} />
             <FancyBoxContainer {...skills}/>
             <ProjectContainer {...projects} />
+            <ToTopButton target={'#navbar'} />
         </main>
     )
 }

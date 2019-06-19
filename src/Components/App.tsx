@@ -8,7 +8,7 @@ import Footer from "./Footer/Footer";
 const App: React.FunctionComponent = () => {
   return (
     <div className={"vbox center vfill hfill"}>
-      <Navbar />
+      <Navbar id={'navbar'} />
       <Main />
       <Footer />   
                

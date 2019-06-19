@@ -6,7 +6,14 @@ import skills from '../component-data/skills'
 import FancyBoxContainer from '../FancyBox/FancyBoxContainer'
 import projects from '../component-data/projects'
 import ProjectContainer from '../Project/ProjectContainer'
-import ToTopButton from '../ToTopButton/ToTopButton';
+import GoToLink, { GoToLinkProps } from '../GoToLink/GoToLink';
+
+const goToLinkProps:GoToLinkProps = {
+    fixedFromTop: '85%',
+    fixedFromLeft: '90%',
+    color: 'black',
+    link: '#navbar'
+}
 
 const Main: React.FunctionComponent = () => {
     return (
@@ -15,7 +22,7 @@ const Main: React.FunctionComponent = () => {
             <Article {...aboutMe1} />
             <FancyBoxContainer {...skills}/>
             <ProjectContainer {...projects} />
-            <ToTopButton target={'#navbar'} />
+            <GoToLink {...goToLinkProps} />
         </main>
     )
 }

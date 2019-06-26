@@ -8,9 +8,9 @@ import ProjectContainer from '../Project/ProjectContainer'
 import GoToLink, { GoToLinkProps } from '../GoToLink/GoToLink'
 
 const goToLinkProps: GoToLinkProps = {
-  fixedFromTop: '85%',
+  fixedFromTop: '80%',
   fixedFromLeft: '90%',
-  color: 'black',
+  color: 'white',
   link: '#navbar'
 }
 

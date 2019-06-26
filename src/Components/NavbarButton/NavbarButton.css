@@ -9,8 +9,8 @@
   }
 }
 .navbar-btn {
-  background-color: #418607;
-  color: #87072E;
+  color: #000000;
+  background-color: #ffffff;
   border: none;
   text-align: center;
   font-family: inherit;
@@ -31,8 +31,8 @@
 }
 
 .navbar-btn:hover {
-  background-color: #5FD101;
-  color: #D20140;
+  background-color: #111111;
+  color: #eeeeee;
   font-weight: bold;
   font-size: 1em;
   transition: color 0.4s;
@@ -41,7 +41,7 @@
 }
 
 .navbar-btn:active {
-  background-color: #A60A39;
+  background-color: #000000;
   transition: background-color 0.2s;
   transition: font-size 1s;
 }

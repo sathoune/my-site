@@ -70,7 +70,7 @@ const fancyBoxes:Array<FancyBoxProps> = [
     backgroundImage: logoData.react.img,
     hiddenProps: {
       content: [
-        'functional/class based components', 
+        'functional, class based components', 
         'hooks',
       ],
       backgroundColor: logoData.react.color
@@ -109,10 +109,9 @@ const fancyBoxes:Array<FancyBoxProps> = [
     backgroundImage: logoData.html.img,
     hiddenProps: {
       content: [
-        'HTML5', 
+        'semantic markup',
         'ejs', 
         'pug', 
-        'semantic markup',
       ],
       backgroundColor: logoData.html.color
     }
@@ -121,8 +120,7 @@ const fancyBoxes:Array<FancyBoxProps> = [
     backgroundImage: logoData.mocha.img,
     hiddenProps: {
       content: [
-        'chai',
-        'sinon', 
+        'chai', 
         'tdd', 
         'bdd', 
         'unit, integration, functional testing',
@@ -134,7 +132,7 @@ const fancyBoxes:Array<FancyBoxProps> = [
     backgroundImage: logoData.mongo.img,
     hiddenProps: {
       content: [
-        'idk right?',
+        'integration with node',
       ],
       backgroundColor: logoData.mongo.color
     }

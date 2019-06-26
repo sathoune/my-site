@@ -3,7 +3,7 @@ import ids from './main-ids';
 
 const aboutMe0: ArticleProps = {
   id: ids.about0,
-  hContent: 'Abuot me',
+  hContent: 'About me',
   paragraphs:[{
     key: 'p0',
     content: `I enjoy making things. This often comes with burden of challenges. 

@@ -3,6 +3,8 @@ $standard-transition: 0.4s;
 $long-transition: 1s;
 
 body {
+    background-color: $color-primary-1;
+    color: $color-complement-1;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Courier New", "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -30,12 +32,8 @@ html, body, #root {
 .hfill { width: 100%;}
 .vfill { height: 100%;}
 
-footer {
-    color: yellow;
-}
-
 nav, footer {
-    background-color: $color-complement-4;
+    background-color: $color-primary-0;
     width: 100%;
 }
 .blinking-anchor:first-of-type {
@@ -67,8 +65,8 @@ nav {
     img {display: none;} //Hide image so background is visible
 }
 
-.github-link:hover {background: url("/github-light.png") no-repeat;}
-.linkedin-link:hover {background: url("/linkedin-white.png") no-repeat;}
+.github-link:hover {background: url("/github-dark.png") no-repeat;}
+.linkedin-link:hover {background: url("/linkedin-blue.png") no-repeat;}
 
 .article {
     justify-self: center;

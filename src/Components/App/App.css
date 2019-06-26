@@ -1,4 +1,6 @@
 body {
+  background-color: #111111;
+  color: #eeeeee;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Courier New", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,12 +42,8 @@ html, body, #root {
   height: 100%;
 }
 
-footer {
-  color: yellow;
-}
-
 nav, footer {
-  background-color: #380011;
+  background-color: #000000;
   width: 100%;
 }
 
@@ -82,11 +80,11 @@ nav {
 }
 
 .github-link:hover {
-  background: url("/github-light.png") no-repeat;
+  background: url("/github-dark.png") no-repeat;
 }
 
 .linkedin-link:hover {
-  background: url("/linkedin-white.png") no-repeat;
+  background: url("/linkedin-blue.png") no-repeat;
 }
 
 .article {

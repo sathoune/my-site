@@ -3,16 +3,13 @@ import {NavbarButtonProps} from '../NavbarButton/NavbarButton'
 
 const navbarButtonProps: Array<NavbarButtonProps> = [
   {
-    text: "about0", 
+    text: "About", 
     href: "#" + ids.about0  
-  } , {
-    text: "abou1", 
-    href: "#" + ids.about1
   } , { 
-    text: "skills", 
+    text: "Skills", 
     href: "#" + ids.skills
   } , { 
-    text: "porjeckt",
+    text: "Projects",
     href: "#" + ids.projects
   }
 ]

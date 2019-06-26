@@ -7,8 +7,8 @@ const aboutMe0: ArticleProps = {
   paragraphs:[{
     key: 'p0',
     content: `I enjoy making things. This often comes with burden of challenges. 
-    However, when I split them into smaller, abstractable problems and approach them with logic,
-    working on them is easier and feeling of progress keeps me motivated.
+    I prefer to split them into logical, smaller, more abstract problems,
+    working on them this way makes my progress more visible which keeps me motivated.
     I found software engineering convenient because I am able to program from any place 
     around the earth as long as I have computer access and today learning resources 
     are more accessible and diverse than ever.`
@@ -20,7 +20,7 @@ const aboutMe0: ArticleProps = {
   } , {
     key: 'p2',
     content: `I make mistakes. A lot. But every time I review my solutions I try to study what could 
-    be improved and research about possible solutions. This process helps me gain knowledge and understanding
+    be improved and research possible solutions. This process helps me gain knowledge and understanding
     quickly and not to commit similar errors in the future.`
   }]
 };

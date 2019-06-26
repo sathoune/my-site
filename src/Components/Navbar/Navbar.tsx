@@ -8,7 +8,7 @@ export interface NavbarProps {
   id: string
 }
 
-const Navbar: React.FunctionComponent<NavbarProps> = ({id}) => (
+const Navbar: React.FC<NavbarProps> = ({id}) => (
   <nav 
     id={id}
     className={'hbox align-start'}

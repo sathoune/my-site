@@ -38,16 +38,18 @@ nav, footer {
     background-color: $color-complement-4;
     width: 100%;
 }
-
+.blinking-anchor:first-of-type {
+    margin-left: auto;
+}
 nav {
     height: 5%;
     min-height: 3em;
 }
 
-
-.blinking-anchor:first-of-type {
+.linkedin-link {
     margin-left: auto;
 }
+
 .blinking-anchor {
     align-self: center;
     margin-right: 0.5em;
@@ -65,12 +67,8 @@ nav {
     img {display: none;} //Hide image so background is visible
 }
 
-.github-link:hover {
-    background: url("/github-light.png") no-repeat;
-}
-.linkedin-link:hover {
-    background: url("/linkedin-white.png") no-repeat;
-}
+.github-link:hover {background: url("/github-light.png") no-repeat;}
+.linkedin-link:hover {background: url("/linkedin-white.png") no-repeat;}
 
 .article {
     justify-self: center;
@@ -85,14 +83,4 @@ nav {
         margin: 2% 10%;
    
     }
-}
-
-article {
-    margin: 2.5% 0;
-    width: 80%;
-    header {
-        margin-bottom: 5%;
-        font-size: 2em;
-    }
-
 }

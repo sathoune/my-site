@@ -49,12 +49,16 @@ nav, footer {
   width: 100%;
 }
 
+.blinking-anchor:first-of-type {
+  margin-left: auto;
+}
+
 nav {
   height: 5%;
   min-height: 3em;
 }
 
-.blinking-anchor:first-of-type {
+.linkedin-link {
   margin-left: auto;
 }
 
@@ -96,15 +100,6 @@ nav {
 .article p {
   text-align: justify;
   margin: 2% 10%;
-}
-
-article {
-  margin: 2.5% 0;
-  width: 80%;
-}
-article header {
-  margin-bottom: 5%;
-  font-size: 2em;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -48,7 +48,7 @@ const fancyBoxes:Array<FancyBoxProps> = [
     backgroundImage: logoData.js.img,
     hiddenProps: {
       content: [
-        'es6', 
+        'es6+', 
         'functional-style programming', 
         'jQuery',
       ],

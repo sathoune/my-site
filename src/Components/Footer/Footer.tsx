@@ -4,8 +4,7 @@ import AnimatedAnchor from "../AnimatedAnchor/AnimatedAnchor"
 import animatedLinks from "../component-data/animatedLinks"
 
 const Footer: React.FunctionComponent = () => (
-  <footer className="hbox">
-    bye    
+  <footer className="hbox">    
     {
       animatedLinks.map(link => 
         <AnimatedAnchor key={link.href} {...link} />)

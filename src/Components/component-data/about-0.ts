@@ -6,26 +6,22 @@ const aboutMe0: ArticleProps = {
   hContent: 'Abuot me',
   paragraphs:[{
     key: 'p0',
-    content: `I believe I am creator. //a creator.or the, if you think you're God
-    Not a programmer nor a software developer. //neither nor
-    I think that because more than spending time in front of keyboard, 
-    I enjoy making things.`
-    
+    content: `I enjoy making things. This often comes with burden of challenges. 
+    However, when I split them into smaller, abstractable problems and approach them with logic,
+    working on them is easier and feeling of progress keeps me motivated.
+    I found software engineering convenient because I am able to program from any place 
+    around the earth as long as I have computer access and today learning resources 
+    are more accessible and diverse than ever.`
   } , {
     key: 'p1',
-    content:   `However, one often needs expensive tools or expandable materials that he 
-    makes objects with. It is difficult to move them around and to share the 
-    result with others.
-    To program one is only required to possess computer and Internet access 
-    which both are pretty common to have.`
- 
+    content: `I focus on web development. Managing backend and frontend helps me to 
+    gain better comprehension how layers of application work and how to find ways to 
+    separate its concerns in order to achieve clear architecture that is robust and easy to enhance.`
   } , {
     key: 'p2',
-    content: `That is why I find creating software more convenient for me. Developer 
-    still needs to have professional expertise as well as to put time and 
-    effort to achieve quality work; however, I greatly enjoy tinkering, 
-    solving problems and learning new concepts which allow me to learn 
-    quickly and achieve results.`
+    content: `I make mistakes. A lot. But every time I review my solutions I try to study what could 
+    be improved and research about possible solutions. This process helps me gain knowledge and understanding
+    quickly and not to commit similar errors in the future.`
   }]
 };
 

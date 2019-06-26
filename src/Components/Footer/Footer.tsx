@@ -1,5 +1,5 @@
 import React from "react"
-import "../App.css"
+import "../App/App.css"
 import AnimatedAnchor from "../AnimatedAnchor/AnimatedAnchor"
 import animatedLinks from "../component-data/animatedLinks"
 

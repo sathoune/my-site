@@ -1,5 +1,5 @@
 {
-  "homepage":"https://captaincapitalism.github.io/my-site",
+  "homepage": "https://captaincapitalism.github.io/my-site",
   "name": "my-site",
   "version": "0.1.0",
   "private": true,
@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "sass": "^1.21.0"
   }
 }

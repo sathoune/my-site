@@ -6,6 +6,7 @@ import FancyBoxContainer from '../FancyBox/FancyBoxContainer'
 import projects from '../component-data/projects'
 import ProjectContainer from '../Project/ProjectContainer'
 import GoToLink, { GoToLinkProps } from '../GoToLink/GoToLink'
+import MailFrom from '../MailForm/MailForm';
 
 const goToLinkProps: GoToLinkProps = {
   fixedFromTop: '80%',
@@ -19,6 +20,7 @@ const Main: React.FC = () => (
     <Article {...aboutMe0} />
     <FancyBoxContainer {...skills}/>
     <ProjectContainer {...projects} />
+    <MailFrom />
     <GoToLink {...goToLinkProps} />
   </main>
 )

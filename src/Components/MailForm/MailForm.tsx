@@ -1,10 +1,20 @@
 import React, { useState } from "react"
 
-const handleChange = (setter: React.Dispatch<React.SetStateAction<string>>) => 
-  (e: React.ChangeEvent<any>,) => setter(e.target.value)
+interface MailFormState {
+  name: string,
+  email: string,
+  content: string
+}
 
-const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+const handleChange = (setter: React.Dispatch<React.SetStateAction<string>>) => 
+  (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,) => (
+    setter(e.target.value)
+  )
+
+const handleSubmit = (values: MailFormState) => 
+(e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
+  console.log(values)
   console.log("mail sent")
 }  
 
@@ -16,34 +26,42 @@ const MailFrom: React.FC = () => {
   const handleChanges = {
     name: handleChange(setName),
     email: handleChange(setEmail),
-    content: handleChange(setContent)
+    content: handleChange(setContent),
+    submit: handleSubmit({name, email, content})
   }
 
+
   return (
-  <form>
+  <form
+    onSubmit={handleChanges.submit}
+  >
     <h1>
       Contact Me
     </h1>
+  
     <div>
       <label 
         htmlFor="for-name"
       >
         Name:
       </label>
+
       <input 
         type="text"
         name="form-name"
         onChange={handleChanges.name}
         value={name}
       />
-    </div>
 
+    </div>
+    
     <div>
       <label 
         htmlFor="for-email"
       >
         Email:
       </label>
+
       <input 
         type="email"
         name="form-email"
@@ -51,12 +69,14 @@ const MailFrom: React.FC = () => {
         value={email}
       />
     </div>
+
     <div>
       <label 
         htmlFor="for-content"
       >
         Content:
       </label>
+    
       <textarea 
         name="form-content"
         onChange={handleChanges.content}
@@ -64,12 +84,7 @@ const MailFrom: React.FC = () => {
       ></textarea>
     </div>
 
-    <button
-      onClick={handleSubmit}
-    >
-      Submit
-    </button>
-
+    <button> Submit </button>
   </form>
   )
 }

@@ -54,7 +54,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.js.color
     }
-  } , {
+  } , 
+  {
     id: 'skill-node',
     backgroundImage: logoData.node.img,
     hiddenProps: {
@@ -65,7 +66,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.node.color
     },
-  } , {
+  } , 
+  {
     id: 'skill-react',
     backgroundImage: logoData.react.img,
     hiddenProps: {
@@ -75,7 +77,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.react.color
     }
-  } , {
+  } , 
+  {
     id: 'skill-css',
     backgroundImage: logoData.css.img,
     hiddenProps: {
@@ -86,7 +89,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.css.color
     }
-  } , {
+  } , 
+  {
     id: 'skill-redux',
     backgroundImage: logoData.redux.img,
     hiddenProps: {
@@ -95,16 +99,18 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.redux.color
     }
-  } , {
-    id: 'skill-git',
-    backgroundImage: logoData.git.img,
-    hiddenProps: {
-      content: [
-        'github',
-      ],
-      backgroundColor: logoData.git.color
-    }
-  } , {
+  } , 
+  // {
+  //   id: 'skill-git',
+  //   backgroundImage: logoData.git.img,
+  //   hiddenProps: {
+  //     content: [
+  //       'github',
+  //     ],
+  //     backgroundColor: logoData.git.color
+  //   }
+  // } , 
+  {
     id: 'skill-html',
     backgroundImage: logoData.html.img,
     hiddenProps: {
@@ -115,7 +121,8 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.html.color
     }
-  } , {
+  } , 
+  {
     id: 'skill-mocha',
     backgroundImage: logoData.mocha.img,
     hiddenProps: {
@@ -127,16 +134,17 @@ const fancyBoxes:Array<FancyBoxProps> = [
       ],
       backgroundColor: logoData.mocha.color
     }
-  } , {
-    id: 'skill-mongo',
-    backgroundImage: logoData.mongo.img,
-    hiddenProps: {
-      content: [
-        'integration with node',
-      ],
-      backgroundColor: logoData.mongo.color
-    }
-  } ,
+  } , 
+  // {
+  //   id: 'skill-mongo',
+  //   backgroundImage: logoData.mongo.img,
+  //   hiddenProps: {
+  //     content: [
+  //       'integration with node',
+  //     ],
+  //     backgroundColor: logoData.mongo.color
+  //   }
+  // } ,
 ]
 
 const skills: FancyBoxContainerProps = {

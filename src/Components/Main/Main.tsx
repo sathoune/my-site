@@ -20,7 +20,6 @@ const Main: React.FC = () => (
     <Article {...aboutMe0} />
     <FancyBoxContainer {...skills}/>
     <ProjectContainer {...projects} />
-    <MailFrom />
     <GoToLink {...goToLinkProps} />
   </main>
 )

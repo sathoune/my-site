@@ -1,6 +1,7 @@
-import React, { useState } from "react"
+import React, { useState } from 'react'
+import axios from 'axios'
 
-interface MailFormState {
+interface EmailProperties {
   name: string,
   email: string,
   content: string
@@ -11,10 +12,10 @@ const handleChange = (setter: React.Dispatch<React.SetStateAction<string>>) =>
     setter(e.target.value)
   )
 
-const handleSubmit = (values: MailFormState) => 
+const handleSubmit = (values: EmailProperties) => 
 (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault()
-  console.log(values)
+  axios.post('email', values)
   console.log("mail sent")
 }  
 
@@ -33,6 +34,7 @@ const MailFrom: React.FC = () => {
 
   return (
   <form
+    className={"vbox"}
     onSubmit={handleChanges.submit}
   >
     <h1>
